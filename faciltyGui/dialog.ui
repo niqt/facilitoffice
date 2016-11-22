@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainDialog</class>
+ <widget class="QDialog" name="MainDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>772</width>
+    <height>51</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FacilitOffice</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>726</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="leggiPushButton">
+      <property name="text">
+       <string>Leggi</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="stopPushButton">
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="evidenzaPushButton">
+      <property name="text">
+       <string>Evidenzia a riga</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="sceltePushButton">
+      <property name="text">
+       <string>Scelte rapide</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="quaderniPushButton">
+      <property name="text">
+       <string>Quaderni</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="configurazioniPushButton">
+      <property name="text">
+       <string>Configurazioni</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="infoPushButton">
+      <property name="text">
+       <string>Info</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="esciPushButton">
+      <property name="text">
+       <string>Esci</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

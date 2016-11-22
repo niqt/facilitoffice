@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogQuaderno</class>
+ <widget class="QDialog" name="DialogQuaderno">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>24</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Nome Quaderno</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="nuovaPushButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Nuova pagina nel quaderno</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="apriPushButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Apri una pagina esistente</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Annulla</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderno</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>568</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>apriPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderno</receiver>
+   <slot>apri()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>392</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>418</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nuovaPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderno</receiver>
+   <slot>nuova()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>306</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>325</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>nuova()</slot>
+  <slot>apri()</slot>
+ </slots>
+</ui>

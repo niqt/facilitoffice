@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogPagina</class>
+ <widget class="QDialog" name="DialogPagina">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>18</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableView" name="tableView"/>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButtonNuova">
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(170, 0, 0)</string>
+     </property>
+     <property name="text">
+      <string>Nuova Pagina</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionChiudi">
+   <property name="text">
+    <string>&amp;Chiudi</string>
+   </property>
+  </action>
+  <action name="actionEliminazione">
+   <property name="text">
+    <string>&amp;Eliminazione</string>
+   </property>
+  </action>
+  <action name="actionInserisci">
+   <property name="text">
+    <string>&amp;Inserisci Pagina Esistente</string>
+   </property>
+  </action>
+  <action name="actionApri">
+   <property name="text">
+    <string>Apri</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionChiudi</sender>
+   <signal>triggered()</signal>
+   <receiver>DialogPagina</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionInserisci</sender>
+   <signal>triggered()</signal>
+   <receiver>DialogPagina</receiver>
+   <slot>inserisci()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonNuova</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogPagina</receiver>
+   <slot>nuova()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEliminazione</sender>
+   <signal>triggered()</signal>
+   <receiver>DialogPagina</receiver>
+   <slot>elimina()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableView</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>DialogPagina</receiver>
+   <slot>selectedItem(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>490</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionApri</sender>
+   <signal>triggered()</signal>
+   <receiver>DialogPagina</receiver>
+   <slot>apri()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>nuova()</slot>
+  <slot>inserisci()</slot>
+  <slot>elimina()</slot>
+  <slot>selectedItem(QModelIndex)</slot>
+  <slot>apri()</slot>
+ </slots>
+</ui>

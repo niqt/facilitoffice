@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>17</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="quaderno1PushButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderno di</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="quaderno2PushButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderno di</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="quaderno3PushButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderno di</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="quaderno4PushButton">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderno di</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="quaderno5PushButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderno di</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="quaderno6PushButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderno di</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="quaderno7pushButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderno di</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="quaderno8PushButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderno di</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="quaderno9PushButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderno di</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="quaderno10PushButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>190</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Quaderni di</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuChiudi">
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Chiudi</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuInserisci_Etichetta_al_Quaderno">
+    <property name="title">
+     <string>Inserisci Etichetta al Quaderno</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuApri_Quaderno">
+    <property name="title">
+     <string>Apri Quaderno</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuGestisci_Modelli">
+    <property name="title">
+     <string>Gestisci Modelli</string>
+    </property>
+   </widget>
+   <addaction name="menuChiudi"/>
+   <addaction name="menuInserisci_Etichetta_al_Quaderno"/>
+   <addaction name="menuApri_Quaderno"/>
+   <addaction name="menuGestisci_Modelli"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>quaderno2PushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quaderno1PushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quaderno3PushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>425</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>470</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quaderno4PushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>623</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quaderno5PushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno5()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>723</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>733</x>
+     <y>51</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quaderno10PushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno10()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>715</x>
+     <y>505</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>717</x>
+     <y>535</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quaderno9PushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno9()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>570</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>571</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quaderno8PushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno8()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>515</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>341</x>
+     <y>553</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quaderno7pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno7()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>234</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quaderno6PushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>quaderno6()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>483</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>61</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>quaderno1()</slot>
+  <slot>quaderno2()</slot>
+  <slot>quaderno3()</slot>
+  <slot>quaderno4()</slot>
+  <slot>quaderno5()</slot>
+  <slot>quaderno6()</slot>
+  <slot>quaderno7()</slot>
+  <slot>quaderno8()</slot>
+  <slot>quaderno9()</slot>
+  <slot>quaderno10()</slot>
+ </slots>
+</ui>

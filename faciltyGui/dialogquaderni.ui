@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogQuaderni</class>
+ <widget class="QDialog" name="DialogQuaderni">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>497</width>
+    <height>463</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DialogQuaderni</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout"/>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>2
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>3
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>4
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>5
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>6
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>7
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>10
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_1">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>1
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>9
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>8
+Quaderno
+di</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_1</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>19</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>163</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>97</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>215</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>331</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q5()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>426</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q6()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>21</x>
+     <y>428</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>414</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q7()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>97</x>
+     <y>463</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q10()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>427</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q8()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogQuaderni</receiver>
+   <slot>q9()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>479</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>282</x>
+     <y>500</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>impostazioni()</slot>
+  <slot>etichetta()</slot>
+  <slot>modelli()</slot>
+  <slot>chiudi()</slot>
+  <slot>q1()</slot>
+  <slot>q3()</slot>
+  <slot>q2()</slot>
+  <slot>q4()</slot>
+  <slot>q5()</slot>
+  <slot>q6()</slot>
+  <slot>q7()</slot>
+  <slot>q8()</slot>
+  <slot>q9()</slot>
+  <slot>q10()</slot>
+ </slots>
+</ui>

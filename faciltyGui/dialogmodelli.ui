@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogModelli</class>
+ <widget class="QDialog" name="DialogModelli">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>622</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="pushButton_chiudi">
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Chiudi</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>495</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab_gestidci">
+      <attribute name="title">
+       <string>Gestisci modelli</string>
+      </attribute>
+      <widget class="QTableView" name="tableView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>581</width>
+         <height>241</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_abbina">
+      <attribute name="title">
+       <string>Abbina modello a quaderno</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>591</width>
+         <height>241</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_nuovo">
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Nuovo Modello</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_elimina">
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Elimina Modello</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_chiudi</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogModelli</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>119</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_nuovo</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogModelli</receiver>
+   <slot>nuovo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>202</x>
+     <y>399</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_elimina</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogModelli</receiver>
+   <slot>elimina()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>402</x>
+     <y>407</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>405</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tabWidget</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>DialogModelli</receiver>
+   <slot>tabChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>nuovo()</slot>
+  <slot>elimina()</slot>
+  <slot>tabChanged(int)</slot>
+ </slots>
+</ui>

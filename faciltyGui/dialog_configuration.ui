@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>787</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>30</y>
+     <width>81</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>681</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tabSintesi">
+    <attribute name="title">
+     <string>Sintesi Vocale</string>
+    </attribute>
+    <widget class="QComboBox" name="voiceComboBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>81</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Maschio</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Femmina</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>52</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Voce</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="speedHorizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>160</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>5</number>
+     </property>
+     <property name="maximum">
+      <number>20</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="value">
+      <number>10</number>
+     </property>
+     <property name="sliderPosition">
+      <number>10</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>52</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Velocità</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>52</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Volume</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="volumeHorizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>160</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>30</y>
+       <width>351</width>
+       <height>161</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="playPushButton">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>220</y>
+       <width>97</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Prova Lettura</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="stopPushButton">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>220</y>
+       <width>97</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Interrompi</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="evidenziaCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>191</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Evidenzia durante la lettura</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="mantieniCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>340</y>
+       <width>271</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mantieni evidenziato durante la lettura</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>380</y>
+       <width>241</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="modificaRadioButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>171</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Modifica colore del testo</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="evidenziaRadioButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Evidenzia lo sfondo</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="sottolineaRadioButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>93</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sottolinea</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="colorePushButton">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>390</y>
+       <width>97</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Colore</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="waitHorizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>160</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>5</number>
+     </property>
+     <property name="maximum">
+      <number>40</number>
+     </property>
+     <property name="singleStep">
+      <number>5</number>
+     </property>
+     <property name="value">
+      <number>10</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::TicksBothSides</enum>
+     </property>
+     <property name="tickInterval">
+      <number>5</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pausa di lettura</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabPulsanti">
+    <attribute name="title">
+     <string>Pulsanti facilitati visibili</string>
+    </attribute>
+    <widget class="QCheckBox" name="letturaCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>131</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lettura del testo</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="evidenziaRigaCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Evidenzia riga</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="scelteCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Scelte rapide</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="quaderniCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>82</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Quaderni</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabScelte">
+    <attribute name="title">
+     <string>Reimposta tutte le scelte</string>
+    </attribute>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>641</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Utilizzando questa funzione tutte le scelte effettuate verranno annullate</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="eliminaScelteCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>341</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elimina anche l'elenco personalizzato Scelte Rapide</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="eliminaQuaderniCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>151</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elimina Quaderni</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="reimpostaPushButton">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>180</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>19</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Reimposta</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

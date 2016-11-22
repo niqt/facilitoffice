@@ -1,0 +1,16 @@
+Per installare il programma eseguire:
+sudo install.sh
+
+Per eseguire:
+./start.sh
+
+
+Lo script fara' partire anche openoffice
+
+Il programma richiede che siano installati:
+	* Qt 4.5
+	* Festival
+	* OpenOffice e OpenOffice-dev
+
+
+
